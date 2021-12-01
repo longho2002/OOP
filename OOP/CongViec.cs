@@ -16,11 +16,16 @@ namespace OOP
         {
             this.macv = a.macv;
             this.tencv = a.tencv;
+            this.dsNhanViens = a.dsNhanViens;
+
         }
-        public CongViec(string macv, string tencv)
+        public CongViec(string macv, string tencv, ICollection<NhanVien> dsNhanViens)
         {
             this.macv = macv;
             this.tencv = tencv;
+            this.dsNhanViens = dsNhanViens;
         }
+
+        public ICollection<NhanVien> dsNhanViens { get; set; }
     }
 }

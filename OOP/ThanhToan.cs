@@ -19,7 +19,7 @@ namespace OOP
         {
             this.maTT = a.maTT;
             this.maDP = a.maDP;
-            this.maPT = maPT;
+            this.maPT = a.maPT;
             this.sotienTT = a.sotienTT;
             this.ngTT = a.ngTT;
         }

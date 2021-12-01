@@ -47,10 +47,8 @@
     <Compile Include="DichVu.cs" />
     <Compile Include="CongViec.cs" />
     <Compile Include="KhachHang.cs" />
-    <Compile Include="DV_dadat.cs" />
     <Compile Include="Loai_Phong.cs" />
     <Compile Include="NhanVien.cs" />
-    <Compile Include="PhanCong.cs" />
     <Compile Include="Phong.cs" />
     <Compile Include="PhongBan.cs" />
     <Compile Include="QL_Hotel.cs" />

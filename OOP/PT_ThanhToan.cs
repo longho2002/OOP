@@ -23,5 +23,6 @@ namespace OOP
             this.maPT = maPT;
             this.tenPT = tenPT;
         }
+        
     }
 }

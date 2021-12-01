@@ -17,14 +17,17 @@ namespace OOP
             this.maPB = a.maPB;
             this.tenPB = a.tenPB;
             this.trPhong = a.trPhong;
+            this.NhomNhanVien = a.NhomNhanVien;
         }
 
-        public PhongBan(string maPB, string tenPB, NhanVien trPhong )
+        public PhongBan(string maPB, string tenPB, NhanVien trPhong, ICollection<NhanVien> NhomNhanVien)
         {
             this.maPB = maPB;
             this.tenPB = tenPB;
             this.trPhong = trPhong;
+            this.NhomNhanVien = NhomNhanVien;
         }
         public NhanVien trPhong { get; set; }
+        public ICollection<NhanVien> NhomNhanVien { get; set; }
     }
 }

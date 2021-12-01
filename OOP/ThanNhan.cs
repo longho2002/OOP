@@ -8,7 +8,7 @@ namespace OOP
 {
     public class ThanNhan
     {
-        public NhanVien maNV { get; set; }
+        public ICollection<NhanVien> maNV { get; set; }
         public string hoten { get; set; }
         public DateTime ngSinh { get; set; }
         public string GT { get; set; }
@@ -23,7 +23,7 @@ namespace OOP
             this.GT = a.GT;
             this.QuanHe = a.QuanHe;
         }
-        public ThanNhan(NhanVien maNV, string hoten, DateTime ngSinh, string GT, string QuanHe)
+        public ThanNhan(ICollection<NhanVien> maNV, string hoten, DateTime ngSinh, string GT, string QuanHe)
         {
             this.maNV = maNV;
             this.hoten = hoten;

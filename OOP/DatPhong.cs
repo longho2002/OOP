@@ -19,24 +19,26 @@ namespace OOP
             this.maDP = a.maDP;
             this.maKH = a.maKH;
             this.maPh = a.maPh;
-            this.maDV = a.maDV;
-            this.TongTien = (a.maPh.price + a.maDV.tongtien_DV) * ((int)a.ngKT.Subtract(a.ngDatPh).TotalDays);
+            this.dvdd = a.dvdd;
+            this.dsNhanViens = a.dsNhanViens;
             this.ngDatPh = a.ngDatPh;
             this.ngKT = a.ngKT;
         }
 
-        public DatPhong(string maDP, KhachHang maKH, Phong maPh, DV_dadat maDV, DateTime ngDatPh, DateTime ngKT)
+        public DatPhong(string maDP, KhachHang maKH, Phong maPh, ICollection<DichVu> dvdd, ICollection<NhanVien> dsNhanViens, DateTime ngDatPh, DateTime ngKT)
         {
             this.maDP = maDP;
             this.maKH = maKH;
             this.maPh = maPh;
-            this.maDV = maDV;
+            this.dvdd = dvdd;
+            this.dsNhanViens = dsNhanViens;
             this.ngDatPh = ngDatPh;
             this.ngKT = ngKT;
-            this.TongTien = (this.maPh.price + this.maDV.tongtien_DV) * ((int)this.ngKT.Subtract(this.ngDatPh).TotalDays);
         }
         public KhachHang maKH { get; set; }
         public Phong maPh { get; set; }
-        public DV_dadat maDV { get; set; }
+        public ICollection<DichVu> dvdd { get; set; }
+        public ICollection<NhanVien> dsNhanViens { get; set; }
+
     }
 }
